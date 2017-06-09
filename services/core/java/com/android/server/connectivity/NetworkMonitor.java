@@ -632,7 +632,6 @@ public class NetworkMonitor extends StateMachine {
 
     @VisibleForTesting
     protected CaptivePortalProbeResult isCaptivePortal() {
-        mIsCaptivePortalCheckEnabled = false; //AIA-151 workaround
         if (!mIsCaptivePortalCheckEnabled) return new CaptivePortalProbeResult(204);
 
         URL pacUrl = null, httpsUrl = null, httpUrl = null, fallbackUrl = null;
